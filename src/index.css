@@ -1,1 +1,106 @@
 @import "minireset.css";
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100dvh;
+  background-color: #161616;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.overlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  backdrop-filter: blur(4px);
+  background-color: #0000005f;
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  gap: 42px;
+  background-color: #222222;
+  width: 360px;
+  height: 380px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #3a3a3a;
+  box-shadow:
+    rgba(0, 0, 0, 0.12) 0px 1px 3px,
+    rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.search-bar-ctn {
+  display: flex;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+#search-bar {
+  color: #fff;
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  padding: 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-bar-btn {
+  display: flex;
+  background-color: transparent;
+  border: none;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  flex: 1;
+  color: #fff;
+}
+
+.temperature {
+  font-size: 5rem;
+}
+
+.location {
+  font-size: 1.5rem;
+}
