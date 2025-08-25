@@ -13,4 +13,4 @@ An extremely simple weather app as an API call exercise, this project is from th
 ## Resources
 
 - [minireset.css](https://github.com/jgthms/minireset.css)
-- [transfonter](https://transfonter.org/)
+- [Open Meteo API](https://open-meteo.com)
